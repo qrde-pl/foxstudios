@@ -1,0 +1,11 @@
+This folder contains backups of all the .js files in the parent folder. Normal functionalities of the Archive don't rely on these backups.
+
+Archive.html works completely offline, what it displays depends on those .js files which contain the record of what you have downloaded.
+
+Since those .js files are very important, up to 10 historic backups are stored here. By using a backup to replace files in ".appdata", your Archive.html can travel back in time. This can be useful if your latest .js files somehow got corrupted and your Archive.html stopped working.
+
+Note:
+1. Backup happens no more often than once a day, on the first time you use the extension on the day. Only the recent 10 backups are kept, older ones are deleted.
+2. If you need to travel back in time for some reason, make sure you understand the mechanism, manually backup your current files to another place before overwriting them, so you can restore them if need to.
+3. These .js files determine what MP4s Archive.html THINKS you have, but don't affect what MP4s you ACTUALLY have.
+4. The browser extension also use these .js files to know what has been downloaded, so if you traveled back in time then run the extension, some mp4 files may be re-downloaded even though you already have them, but that's totally fine.
